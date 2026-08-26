@@ -25,12 +25,15 @@
   border-radius: 30px;
   }
   html{scroll-behavior:smooth;}
+  html, body{ max-width:100%; overflow-x:hidden; }
   body{
     background:var(--paper);
     color:var(--ink);
 
     line-height:1.75;
   }
+  /* شبكة أمان: أي صورة تتنسى من غير كلاس عرض متجاوب متكسرش الصفحة */
+  img{ max-width:100%; height:auto; }
   ::selection{ background:var(--rust); color:#fff; }
 
   .eyebrow{
