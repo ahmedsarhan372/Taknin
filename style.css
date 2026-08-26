@@ -119,9 +119,9 @@
   .hero h1{
     font-family:'Cairo',sans-serif; font-weight:900;
     font-size:clamp(2.1rem, 4.2vw, 3.5rem);
-    line-height:1.28; max-width:16ch;
+    line-height:1.28;
   }
-  .hero .lede{ margin-top:1.4rem; max-width:56ch; color:#b9c4dc; font-size:1.05rem; }
+  .hero .lede{ margin-top:1.4rem; color:#b9c4dc; font-size:1.05rem; }
 
   .hero-plot{
     position:absolute; left:-40px; top:50%; transform:translateY(-50%);
