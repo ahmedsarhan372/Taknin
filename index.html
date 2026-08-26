@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الاشتراطات الفنية للطلب | المركز التكنولوجي لتقنين أملاك الدولة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Bootstrap 5.3 RTL -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebarNav" data-bs-offset="150" data-bs-smooth-scroll="true" tabindex="0">
+
+<nav class="navbar topbar d-lg-none">
+  <div class="container-fluid">
+    <span class="navbar-brand brand mb-0">تقنين أملاك الدولة</span>
+    <button class="btn btn-topbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+      الفهرس ☰
+    </button>
+  </div>
+</nav>
+
+<div class="shell d-flex">
+
+  <div class="offcanvas-lg offcanvas-start sidebar" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header d-lg-none">
+      <h5 class="offcanvas-title" id="sidebarLabel">الفهرس</h5>
+      <button type="button" class="btn-close btn-close-whiذte" data-bs-dismiss="offcanvas" data-bs-target="#sidebar" aria-label="إغلاق"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column p-0">
+      <div class="sb-brand">
+        <div class="sb-brand-text">
+          <div class="t1">المركز التكنولوجي</div>
+          <div class="t2">لتقنين أملاك الدولة</div>
+        </div>
+      </div>
+
+      <nav id="sidebarNav" class="nav flex-column flex-grow-1">
+        <div class="sb-group-label"></div>
+        <a class="nav-link sb-link" href="#irshad"><span class="n"></span> محضر الإرشاد</a>
+        <a class="nav-link sb-link" href="#irshad-desc"><span class="n"></span> ضوابط وصف المحضر</a>
+        <a class="nav-link sb-link" href="#system-data-1"><span class="n"></span> بيانات المنظومة</a>
+        <a class="nav-link sb-link" href="#system-data-2"><span class="n"></span> الحدود والمرفقات</a>
+
+        <div class="sb-group-label"></div>
+        <a class="nav-link sb-link" href="#wording-desc"><span class="n"></span> صياغة الوصف</a>
+        <a class="nav-link sb-link" href="#wording-buildings"><span class="n"></span> صياغة وصف المباني</a>
+        <a class="nav-link sb-link" href="#wording-special"><span class="n"></span> الحالات الخاصة</a>
+        <a class="nav-link sb-link" href="#wording-bounds"><span class="n"></span> صياغة الحدود</a>
+
+        <div class="sb-group-label"></div>
+        <a class="nav-link sb-link" href="#croquis"><span class="n"></span> صورة كروكي الطلب</a>
+        <a class="nav-link sb-link" href="#shapefile"><span class="n"></span> الشيب فايل</a>
+        <a class="nav-link sb-link" href="#lifecycle"><span class="n"></span> دورة عمل الطلب</a>
+
+        <div class="sb-group-label"></div>
+        <a class="nav-link sb-link" href="#videos"><span class="n"></span> فيديوهات الشرح</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="flex-grow-1">
+    <section class="hero blueprint-bg py-5 px-4 px-lg-5">
+      <div class="hero-plot">
+        <svg viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="60,40 340,90 300,300 90,340 40,180" stroke="#e8956b" stroke-width="1.4" fill="none" stroke-dasharray="2 4"/>
+          <circle cx="60" cy="40" r="4" stroke="#e8956b" stroke-width="1.2" fill="none"/>
+          <circle cx="340" cy="90" r="4" stroke="#e8956b" stroke-width="1.2" fill="none"/>
+          <circle cx="300" cy="300" r="4" stroke="#e8956b" stroke-width="1.2" fill="none"/>
+          <circle cx="90" cy="340" r="4" stroke="#e8956b" stroke-width="1.2" fill="none"/>
+          <circle cx="40" cy="180" r="4" stroke="#e8956b" stroke-width="1.2" fill="none"/>
+        </svg>
+      </div>
+      <h1>الاشتراطات الفنية لمراجعة طلبات الرفع المساحي</h1>
+      <p class="lede">
+        مرجع تشغيلي واحد يجمع خطوات العمل على المنظومة، ضوابط محضر الإرشاد، قواعد صياغة الوصف والحدود،
+        ومتطلبات الملفات الرقمية المطلوبة لإنجاز طلب التقنين من استلام الطلب حتى صدور الشهادة.
+      </p>
+    </section>
+
+
+    <section class="doc py-5 px-4 px-lg-5" id="irshad">
+      <div class="row g-4 g-lg-5 align-items-center justify-content-center">
+        <div class="col-lg-6">
+                <div class="doc-head">
+        <h2><span class="stake"></span>محضر الإرشاد — الضوابط العامة</h2>
+        <p class="sub">محضر الإرشاد والمعاينة للرفع المساحي هو المرجع الورقي الذي يجب أن تطابقه بيانات المنظومة حرفيًا.</p>
+      </div>
+          <div class="rules">
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُكتب <strong>رقم طلب التقنين</strong> و<strong>رقم طلب الرفع المساحي</strong> في المكان المخصص بالمحضر، مع مطابقتهما بالمنظومة.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يُرفَق المحضر واضحًا بالقلم الجاف الأزرق فقط — <strong>يُمنع</strong> أي تعديل بالفوتوشوب أو شطب على أي بيانات فيه.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>عند وجوب تعديل بيان، يجب <strong>تغيير المحضر بالكامل</strong> وتوقيعه من المواطن من جديد.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p><strong>لا يُسمح</strong> بأي اختصارات في المحضر أو المنظومة — مثال: "ش" لا تُكتب بدلًا من "شارع".</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب أن تكون بيانات المحضر مطابقة بالكامل للبيانات الموجودة على المنظومة، والالتزام بشكل المحضر المعتمد.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>اسم صاحب الطلب "المالك" يجب أن يكون <strong>مطابقًا لتوقيع المحضر</strong>، إلا في حال كان الموقّع محاميًا أو وكيلًا، مع ذكر ذلك في التعليقات.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُكتب الحدود في المحضر <strong>مفصّلة</strong> وفي مكانها المخصص، مع التفرقة بوضوح بين حدود الجار وحدود قطع الأراضي المجاورة.</p></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="irshad-photo">
+            <img src="images/A-Z26-2614-02-00000078337.jpg" alt="نموذج محضر الإرشاد" class="w-100">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="irshad-desc">
+      <div class="doc-head">
+        <h2><span class="stake"></span>ضوابط توصيف البيانات داخل المحضر</h2>
+        <p class="sub">قواعد دقيقة لصياغة الحد ووصف الأرض والمبنى بما يعكس واقع الموقع فعليًا.</p>
+      </div>
+      <div class="rules">
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يُكتب توصيف الحد كما هو (مبنى سكني / أرض زراعية)، ولا تُكتب "ممر" أو "حديقة" أو "مشاية" وحدها — بل: (ممر أو حديقة ثم جار).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>عند وجود حد مشاية مناصفة أو مشاية ضمن حدود صاحب الطلب، يجب ذكر ذلك في تعليق. وفي حال المشاية المناصفة بالتبعية، يوصف ما بعد المشاية (مثال: قطعة أرض).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>عند وجود اسم شارع يُكتب كما هو؛ وإن لم يوجد اسم، يُكتب "شارع متفرع من الشارع الرئيسي" مع مطابقة اسم الشارع بين المحضر والمنظومة ومكانه في المحضر.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>إذا وُجد اسم شارع في العنوان، يجب وضعه أيضًا في أحد حدود القطعة.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يُوصف الأرض والمبنى وصفًا تفصيليًا مع ذكر كل الإشغالات عليها (غرف – مباني – جمالون – حوائط – أعمدة).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب أن تطابق بيانات المحضر نوع الطلب والاستخدام الفعلي على الواقع، حتى لو اختلف عن إرشاد المواطن.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>في طلبات الأراضي التي تحتوي أكثر من مبنى، يُوصف ما تحتويه الأرض من مبانٍ وصفًا دقيقًا ومحددًا بكل تفاصيله.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يمكن رفع طلب أرض يوجد على جزء منها مبنى، ولكن <strong>لا يمكن</strong> رفع طلب أرض مُقام عليها جزء من مبنى.</p></div>
+      </div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="system-data-1">
+ <div class="manzoma-data row">
+<div class="content col-6">
+       <div class="doc-head ">
+        <div class="eyebrow"><span class="peg"></span>إدخال بيانات</div>
+        <h2><span class="stake"></span>بيانات المنظومة</h2>
+        <p class="sub">تعبئة دقيقة لكل الحقول الخاصة بصاحب الطلب ونوع الطلب قبل التنقل إلى بيانات الحدود.</p>
+      </div>
+      <div class="rules">
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب أن تكون جميع البيانات الخاصة بنوع الطلب <strong>مُدخلة بالكامل</strong>.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب أن يكون رقم الطلب في محضر الإرشاد <strong>مطابقًا</strong> للرقم الموجود بالمنظومة.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>في حالات الأراضي متعددة المباني، يُوصف ما تحتويه من مبانٍ وصفًا دقيقًا ومحددًا في كل تفاصيله.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>عند توقيع شخص غير صاحب الطلب، يُكتب تعليق بصفة الموقّع، ويُرفق التوكيل.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>إن رُفع نوع طلب مخالف لما قدّمه المواطن، يُذكر أن التغيير تم بعلم وإرشاد المواطن، مع مطابقة ذلك للمحضر والمنظومة.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُكتب مساحة الأرض بالفدان في مكانها المخصص، مع التأكد من صحة تحويلها من المتر إلى الفدان.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُرفق صورة بطاقة صاحب الطلب، وإن كان الموقّع وكيلًا تُرفق أيضًا صورة التوكيل وصورة بطاقة الشخص الموقّع على المحضر.</p></div>
+      </div>
+</div>
+<div class="manzoma-photo col-6">
+  <img src="images/بيانات المنظومة.png" alt="" class="w-100">
+</div>
+ </div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="system-data-2">
+<div class="hodod row justify-content-center g-4 g-lg-5 align-items-center">
+<div class="text col-6">
+      <div class="doc-head">
+        <h2><span class="stake"></span>الحدود والمرفقات المساحية</h2>
+        <p class="sub">حزمة الملفات الميدانية التي تثبت صحة الرفع قبل إرسال الطلب.</p>
+      </div>
+      <div class="rules">
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُكتب الحدود مطابقة لما تم رفعه ومطابقة للمحضر.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُوصف الإشغالات على الأرض الزراعية مع إرفاق صور فوتوغرافية للأرض وما عليها من إشغالات.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُرفع الحدود الخارجية للمباني مع الوصف الخارجي وتحديد النشاط المستخدم (سكني – تجاري) أو نوع الأرض (زراعي – بور).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب التأكد من إرفاق ملف <strong class="mono">Row Data</strong> وملف <strong class="mono">RINEX</strong>.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُرفق صورة موقع الطلب (Location) من صورة جوية واضحة.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب إرفاق صور لجهاز الـ <strong class="mono">GPS</strong>، وصورة للأرض مع إظهار التاريخ داخل الصورة.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب التأكد من تواجد كافة المرفقات، ومراجعة تطابق البيانات بين المحضر والمنظومة مراجعة جيدة قبل الإرسال.</p></div>
+      </div>
+</div>
+<div class="hodod-photo col-6">
+  <div class="image">
+    <img src="images/حدود.png" alt="نموذج محضر الإرشاد">
+  </div>
+</div>
+</div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="wording-desc">
+<div class="wasf row">
+<div class="content col-6">
+        <div class="doc-head">
+        <div class="eyebrow"><span class="peg"></span>صياغة نموذجية</div>
+        <h2><span class="stake"></span>صياغة الوصف — الأراضي الزراعية والمقام عليها مبانٍ</h2>
+        <p class="sub">أمثلة معتمدة لصياغة وصف العقار بحسب حالته الفعلية.</p>
+      </div>
+
+      <div class="scenario">
+        <div class="stitle">أولًا — الأرض الزراعية</div>
+        <p>عند وجود جزء منزرع وجزء "بور" ومبانٍ متفرقة ضمن المساحة، يُذكر إجمالي المساحة، ثم توزيع الاستخدامات، ثم كل مبنى برمزه ومساحته.</p>
+        <div class="example">
+          مثال: أرض زراعية بإجمالي 5 فدان، يوجد عليها جزء منزرع بإجمالي مساحة 2 فدان، وجزء أرض بور بإجمالي مساحة 3 فدان، ويوجد ضمن المساحة المزروعة 3 مبانٍ (A، B، C): مبنى (A) عبارة عن حظيرة مواشي بمساحة 500م، مبنى (B) عبارة عن مبنى إداري بمساحة 200م، مبنى (C) عبارة عن غرفة حارس بمساحة 20م. ويوجد ضمن مساحة الأرض البور مبنيان (D، E): مبنى (D) عنبر دواجن بمساحة 700م، مبنى (E) مبنى إداري بمساحة 200م.
+        </div>
+      </div>
+
+      <div class="scenario">
+        <div class="stitle">ثانيًا — الأرض المقام عليها مبانٍ</div>
+        <p>تُذكر المساحة الإجمالية للأرض، ثم كل مبنى برمزه ونوعه ومساحته، على أن تكون مساحات المباني ضمن إجمالي مسطح الأرض.</p>
+        <div class="example">
+          مثال: أرض بإجمالي مسطح 3 فدان مقام عليها 3 مبانٍ يرمز لهم (A، B، C): مبنى (A) مبنى سكني بمساحة 300م، مبنى (B) حظيرة مواشي بمساحة 700م، مبنى (C) غرفة حارس بمساحة 50م — من ضمن إجمالي مسطح الأرض.
+        </div>
+      </div>
+</div>
+<div class="wasf-image col-6">
+<div class="wasf-photo row">
+  <div class="images">
+  <img src="images/ارض عليها مبانى.png" alt="" class="w-100 col-3">
+  <img src="images/ارض عليها مبانى 2.png" alt="" class="mt-3 col-6">
+  <img src="images/ارض عليها مبانى 3.png" alt="" class="col-5">
+  </div>
+
+
+</div>
+</div>
+</div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="wording-buildings">
+
+      <div class="buildings_wasf row justify-content-center align-items-center">
+        <div class="content col-6">
+        <div class="doc-head">
+        <h2><span class="stake"></span>صياغة وصف المبانى</h2>
+        <p class="sub">تحدَّد طريقة الصياغة والملف الواجب رفعه (أرض + مبنى / مبنى فقط) وفق العلاقة بين مساحة الأرض ومساحة المبنى.</p>
+      </div>
+
+
+      <div class="scenario">
+        <div class="stitle"> مبنى مقام على أرض أكبر من ضعفَي مساحته</div>
+        <p>يُحوَّل الطلب تلقائيًا إلى "أرض مقام عليها مبنى".</p>
+        <div class="example">مثال: أرض بمساحة 200م مقام عليها مبنى دور أرضي بمساحة 80م.</div>
+      </div>
+      <div class="scenario">
+        <div class="stitle">المباني المتجاورة</div>
+        <p>عند وجود أكثر من مبنى بنفس الأرض، يُوصف كل مبنى برمزه ومساحته على حدة، مع كتابة مساحة وحدود الأرض ورفع الأرض والمبنى معًا.</p>
+        <div class="example">مثال: عبارة عن مبنيين (A، B) — مبنى (A) مبنى سكني عبارة عن دور أرضي بمساحة 100م، مبنى (B) مبنى سكني عبارة عن دور أرضي وثلاث أدوار علوية بمساحة 100م.</div>
+      </div>
+        </div>
+        <div class="images col-6">
+          <div class="photos">
+          <img src="images/ارض اكبر من ضعفين .png" alt="" class="w-100 col-12 ">
+          <img src="images/مبانى متجاورة.png" alt="" class="w-100 col-12 mt-3">
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="wording-special">
+<div class="special-cases row">
+  <div class="content col-6">
+      <div class="doc-head">
+        <div class="eyebrow"><span class="peg"></span>حالات خاصة</div>
+        <h2><span class="stake"></span>الارض التى يقطعها طريق (رئيسى فقط)</h2>
+        <p class="sub">أربع حالات متكررة تتطلب معالجة خاصة قبل الرفع على الشيب فايل والمنظومة.</p>
+      </div>
+
+      <div class="scenario">
+        <div class="stitle"> الأرض التي يقطعها طريق</div>
+        <p>تُقسّم القطعة إلى (A، B) وتُوصف كل قطعة على حدة مع ما عليها من مبانٍ. تُفرَّغ مساحة الطريق من مساحة الأرض، وتُضاف مساحة كل قطعة في المنظومة والشيب فايل، ويُوضع الطريق والأرض في الكاد وصورة الكاد.</p>
+        <div class="example">مثال: قطعة أرض تنقسم إلى (A، B) — قطعة (A) بمساحة محددة، وقطعة (B) بمساحة محددة مقام عليها مبنيان: مبنى (A) سكني، ومبنى (B) غرفة حارس.</div>
+      </div>
+
+      <div class="scenario">
+        <div class="stitle"> الجزء من مبنى</div>
+        <p>يُذكر إجمالي مساحة المبنى ثم مساحة الجزء المراد تقنينه منه. تُكتب مساحة الجزء في المنظومة مع حدود الأرض، ويُرفع الجزء والكل معًا.</p>
+      </div>
+
+      <div class="scenario">
+        <div class="stitle"> الجزء من أرض</div>
+        <p><strong>لا يمكن</strong> رفع جزء من أرض؛ يُرفع فقط الجزء المراد تقنينه بعد تحديده على الخريطة.</p>
+      </div>
+
+      <div class="callout">
+        <div class="lab">تنبيهات ثابتة</div>
+        <p>في طلبات الأراضي لا يمكن رفع أرض مُقام عليها جزء من مبنى.</p>
+        <p>في طلبات الأراضي لا يمكن رفع أرض تقطعها طريق دون تفريغ مساحته.</p>
+        <p>عند ضم مساحة الأرض ضمن المبنى، يُشترط أن تكون الأرض محاطة بسور.</p>
+      </div>
+  </div>
+  <div class="photos col-6">
+<div class="photos">
+  <img class="w-100 col-6" src="images/ارض يقطعها طريق.png" alt="">
+  <img src="images/الجزء من مبنى.png" alt="" class="w-100 mt-3">
+</div>
+  </div>
+</div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="wording-bounds">
+    <div class="hodod-tutorial row">
+<div class="content col-lg-6">
+      <div class="doc-head">
+        <div class="eyebrow"><span class="peg"></span>صياغة نموذجية</div>
+        <h2><span class="stake"></span>صياغة الحدود</h2>
+        <p class="sub">لكل حد أربعة اتجاهات: بحري، قبلي، شرقي، غربي — تُوصف وفق ظاهرتها الجغرافية الفعلية لا باسم الجار وحده.</p>
+      </div>
+      <div class="rules">
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>الحد البحري يأخذ اتجاهه طبقًا لزاوية الميل الأصغر (الشمال الجغرافي).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>الحدود من نوع (مشاية – حديقة – ممر – مصرف) تُكتب: مشاية ثم الظاهرة التي تليها — مثال: مشاية ثم قطعة أرض.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>عند وجود أكثر من ظاهرة في الحد نفسه يُكتب: "بعضه ... وبعضه ..." — مثال: بعضه قطعة أرض وبعضه مبنى سكني.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>إذا كان الجار منشأة عامة تُكتب صراحة: (مصنع – مدرسة – مستشفى ... إلخ).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>إذا كان الحد أرضًا تُكتب: (قطعة أرض – أرض فضاء – أرض محاطة بسور).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>إذا كان الحد مبنى تُكتب: (مبنى سكني – جار مبنى).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p><strong>يُمنع منعًا باتًا</strong> استخدام أسماء الجيران وحدها في الحدود دون توصيفها جغرافيًا (مبنى – أرض – شارع ... إلخ).</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p><strong>يُمنع منعًا باتًا</strong> كتابة "باقي الملك" في الحدود.</p></div>
+      </div>
+</div>
+<div class="hodod-photo col-lg-6">
+  <img src="images/صياغة الحدود.png" alt="" class="w-100">
+</div>
+
+    </div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5 " id="croquis">
+      <div class="doc-head">
+        <h2><span class="stake"></span>صورة كروكي الطلب</h2>
+        <p class="sub">رسم توضيحي أبيض وأسود يرافق كل طلب، مأخوذ من الكاد، ويجب أن يعكس اتجاه الشمال وحدود القطعة بدقة.</p>
+      </div>
+      <div class="row g-4 g-lg-5 ">
+        <div class="col-lg-6">
+          <div class="rules">
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يُوضع سهم الشمال مشيرًا إلى اتجاه الشمال، أقصى الجهة الشمالية الغربية من الصورة.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُوضع نقاط الإحداثيات في صورة كروكي الطلب.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب أن تكون البيانات (سهم الشمال) واضحة وبحجم مناسب.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>صورة الكروكي تكون <strong>بالأبيض والأسود</strong> فقط.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب أن توضّح الصورة الحدود الفاصلة في الأراضي.</p></div>
+            <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>تُرمَّز المباني ويُوضع مفتاح للترميز.</p></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="figure-card">
+            <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg">
+              <!-- north arrow -->
+              <g transform="translate(24,20)">
+                <line x1="0" y1="24" x2="0" y2="0" stroke="#f6f1e6" stroke-width="1.4"/>
+                <polygon points="0,0 -5,10 5,10" fill="#f6f1e6"/>
+                <text x="0" y="-4" fill="#f6f1e6" font-size="9" text-anchor="middle" font-family="JetBrains Mono, monospace">N</text>
+              </g>
+              <polygon points="60,60 260,90 220,220 90,235 45,150" fill="none" stroke="#e8956b" stroke-width="1.4"/>
+              <rect x="120" y="120" width="50" height="42" fill="none" stroke="#8ea0c2" stroke-width="1"/>
+              <text x="145" y="145" fill="#8ea0c2" font-size="9" text-anchor="middle" font-family="JetBrains Mono, monospace">A</text>
+              <rect x="185" y="140" width="30" height="22" fill="none" stroke="#8ea0c2" stroke-width="1"/>
+              <text x="200" y="154" fill="#8ea0c2" font-size="8" text-anchor="middle" font-family="JetBrains Mono, monospace">B</text>
+              <circle cx="60" cy="60" r="2.4" fill="#e8956b"/>
+              <circle cx="260" cy="90" r="2.4" fill="#e8956b"/>
+              <circle cx="220" cy="220" r="2.4" fill="#e8956b"/>
+              <circle cx="90" cy="235" r="2.4" fill="#e8956b"/>
+              <circle cx="45" cy="150" r="2.4" fill="#e8956b"/>
+            </svg>
+            <div class="figure-caption">// مخطط كروكي تمثيلي — أبيض/أسود، سهم شمال، نقاط إحداثية، ترميز مبانٍ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="shapefile">
+      <div class="doc-head">
+        <h2><span class="stake"></span>الشيب فايل</h2>
+        <p class="sub">ملف GIS منظم يحتوي طبقات الأرض والمباني ونقاط الرفع بإسقاط موحّد وسمات (Attributes) محددة.</p>
+      </div>
+      <div class="rules">
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يُرسَل الملف محتويًا على ثلاث طبقات: أرض – مبانٍ – نقاط رفع. في حال قطع الطريق للأرض، تُضاف طبقة للأرض بعد تفريغ الطريق منها، مع ترميز الأراضي.</p></div>
+        <div class="rule d-flex gap-2 py-2 border-top"><div class="pin"><svg viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#c1440e" stroke-width="1.4" fill="none"/></svg></div><p>يجب مراعاة أن يكون إسقاط الملف <strong class="mono">WGS 1984 UTM </strong> حسب موقع الطلب جغرافيًا.</p></div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table attr-table mono align-middle mb-0">
+          <thead>
+            <tr><th>الطبقة</th><th>الحقول المطلوبة (Attributes)</th><th>ملاحظة</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>طبقة الأرض</td><td>رقم الطلب، النوع، المساحة</td><td>مضلّع واحد لكل طلب</td></tr>
+            <tr><td>طبقة المباني</td><td>رقم الطلب، الرمز، النوع، المساحة</td><td>رمز مطابق لصورة الكروكي</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="lifecycle">
+      <div class="doc-head">
+        <div class="eyebrow"><span class="peg"></span>ملخص شامل</div>
+        <h2><span class="stake"></span>دورة عمل الطلب — من الاستلام إلى الشهادة</h2>
+        <p class="sub">الخلاصة الكاملة لرحلة الطلب عبر خمس مراحل رئيسية.</p>
+      </div>
+      <div class="cycle">
+        <div class="cyc-item d-flex gap-3 py-3">
+          <div class="cyc-dot">1</div>
+          <div><b>الرفع على المنظومة</b><p>تسجيل الطلب وتوزيعه على طقم الرفع التابع لمنطقته، مع التواصل مع المواطن لتحديد موعد الرفع خلال 72 ساعة من تاريخ تقديمه.</p></div>
+        </div>
+        <div class="cyc-item d-flex gap-3 py-3">
+          <div class="cyc-dot">2</div>
+          <div><b>الرفع المساحي</b><p>توجّه الطقم الميداني لرفع الطلبات الموزَّعة طبقًا لتعليمات المركز التكنولوجي لتقنين أراضي الدولة، وجمع كافة البيانات والصور المطلوبة.</p></div>
+        </div>
+        <div class="cyc-item d-flex gap-3 py-3">
+          <div class="cyc-dot">3</div>
+          <div><b>إدخال البيانات</b><p>إدخال البيانات التي جمعها الطقم عبر المكاتب الفنية التابعة، وتحضير الطلب ليتناسب مع التعليمات المتبعة.</p></div>
+        </div>
+        <div class="cyc-item d-flex gap-3 py-3">
+          <div class="cyc-dot">4</div>
+          <div><b>المراجعة</b><p>مراجعة كافة بيانات الطلب والتأكد من مطابقتها للواقع، واستيفائها لكافة التعليمات الصادرة.</p></div>
+        </div>
+        <div class="cyc-item d-flex gap-3 py-3">
+          <div class="cyc-dot">5</div>
+          <div><b>استخراج الشهادة</b><p>صدور شهادة المطابقة بعد استيفاء الطلب لكافة التعليمات المطلوبة.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc py-5 px-4 px-lg-5" id="videos">
+      <div class="doc-head">
+        <h2><span class="stake"></span>فيديوهات الشرح</h2>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="videoGrid"></div>
+      <p class="empty-hint" id="videoEmptyHint">لا توجد فيديوهات مضافة بعد.</p>
+    </section>
+
+    <footer class="d-flex justify-content-between flex-wrap gap-2 px-4 px-lg-5 py-4">
+      <div>المركز التكنولوجي لتقنين أملاك الدولة — مراجعة طلبات الرفع المساحي</div>
+    </footer>
+
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="videos.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
