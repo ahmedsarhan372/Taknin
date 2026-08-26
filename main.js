@@ -1,10 +1,33 @@
-
-  (function closeSidebarOnLinkClick(){
+(function closeSidebarOnLinkClick(){
     const sidebarEl = document.getElementById('sidebar');
     if (!sidebarEl || !window.bootstrap) return;
     const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(sidebarEl);
+
+    function goToTarget(hash){
+      const targetEl = document.querySelector(hash);
+      if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (history.pushState) history.pushState(null, '', hash);
+      else location.hash = hash;
+    }
+
     sidebarEl.querySelectorAll('.sb-link').forEach(a => {
-      a.addEventListener('click', () => offcanvas.hide());
+      a.addEventListener('click', (e) => {
+        const hash = a.getAttribute('href');
+        if (!hash || hash.charAt(0) !== '#') return; 
+
+        e.preventDefault(); 
+
+        if (!sidebarEl.classList.contains('show')) {
+          goToTarget(hash);
+          return;
+        }
+
+        sidebarEl.addEventListener('hidden.bs.offcanvas', function onHidden(){
+          sidebarEl.removeEventListener('hidden.bs.offcanvas', onHidden);
+          goToTarget(hash);
+        });
+        offcanvas.hide();
+      });
     });
   })();
 
